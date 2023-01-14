@@ -91,8 +91,8 @@ public class TicketDao implements Dao<Long, Ticket> {
                 ticket = builtTicket(rez);
             }
             return Optional.ofNullable(ticket);
-        } catch (SQLException throwables) {
-            throw new DaoException(throwables);
+        } catch (SQLException throwable) {
+            throw new DaoException(throwable);
         }
     }
 
